@@ -23,14 +23,14 @@ const Demo = () => {
       />
       <ContainerWrapper>
         <Title py="2rem">Demo</Title>
-        <iframe
-          width="100%"
+        <iframe 
+          width="100%" 
           height={isMobile ? "350" : isTablet ? "450" : "650"}
-          src="https://www.youtube.com/embed/9y927xiDtJo"
-          title="Moodcaster  - Software Demo Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
+          src="https://www.youtube.com/embed/uufCbCWfsgA" 
+          title="ClientRate" 
           frameBorder={0}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowFullScreen
         ></iframe>
       </ContainerWrapper>
       <LandingFooter notLandingPage={true} />
