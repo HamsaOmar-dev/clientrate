@@ -16,7 +16,7 @@ export default function App(props: AppProps) {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-2HVSM07B8K"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_SECRET}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -25,7 +25,7 @@ export default function App(props: AppProps) {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-2HVSM07B8K');
+          gtag('config', '${process.env.GOOGLE_ANALYTICS_SECRET}');
         `}
       </Script>
       <Head>
