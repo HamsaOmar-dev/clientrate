@@ -313,7 +313,7 @@ const AddClient = ({ activeStep = 0, data = null, fetchingLoader = false }: AddC
             }),
           });
         } else if (res.data?.message === "Proceed To Payment To Add This ClientRate" || res.data?.data?.stripePaid === false) {
-          router.push("https://buy.stripe.com/test_00g3fv66YfmA0mY003");
+          router.push("https://buy.stripe.com/00g3eF6MKaqd5FK8ww");
         } else {
           alert(res.data.message);
         }

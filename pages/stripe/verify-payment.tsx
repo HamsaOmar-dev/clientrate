@@ -24,7 +24,7 @@ const StripePaymentVerification = () => {
             router.push("/dashboard");
           } else {
             router.push("/auth/sign-in");
-            // router.push("https://buy.stripe.com/test_aEU6rH66Y2zOfhScMM");
+            // router.push("https://buy.stripe.com/00g3eF6MKaqd5FK8ww");
           }
         })
         .catch((err) => {

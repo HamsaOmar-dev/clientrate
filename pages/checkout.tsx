@@ -28,7 +28,7 @@ const Stripe = () => {
           } else {
             console.log("T-DEBUG", res.data);
             // router.push("/stripe");
-            router.push("https://buy.stripe.com/test_00g3fv66YfmA0mY003");
+            router.push("https://buy.stripe.com/00g3eF6MKaqd5FK8ww");
           }
         })
         .catch((err) => {
