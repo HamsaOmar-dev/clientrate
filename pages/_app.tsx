@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { MantineProvider } from "@mantine/core";
 import "../styles/globals.css";
 
@@ -14,6 +15,19 @@ export default function App(props: AppProps) {
 
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-2HVSM07B8K"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2HVSM07B8K');
+        `}
+      </Script>
       <Head>
         <title>ClientRate</title>
         {/* <link
@@ -35,12 +49,21 @@ export default function App(props: AppProps) {
           fontFamily: "Satoshi, sans-serif",
 
           colors: {
-            yellow: ["#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FAB005"],
+            yellow: [
+              "#FCC419",
+              "#FCC419",
+              "#FCC419",
+              "#FCC419",
+              "#FCC419",
+              "#FCC419",
+              "#FCC419",
+              "#FAB005",
+            ],
           },
           primaryColor: "yellow",
         }}
       >
-        <Notifications position="top-right"/>
+        <Notifications position="top-right" />
         <SessionProvider session={session}>
           <Component {...pageProps} />
         </SessionProvider>
