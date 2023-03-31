@@ -35,10 +35,8 @@ const Demo = () => {
         <div style={{position: "relative", paddingBottom: "48.4375%", height: 0,}}>
           <iframe
             src="https://www.loom.com/embed/2ad57c0942d24d1486beff1cb3e8632d"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
             style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
           ></iframe>
         </div>
