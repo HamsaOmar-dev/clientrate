@@ -23,7 +23,7 @@ const Demo = () => {
       />
       <ContainerWrapper>
         <Title py="2rem">Demo</Title>
-        <iframe 
+        {/* <iframe 
           width="100%" 
           height={isMobile ? "350" : isTablet ? "450" : "650"}
           src="https://www.youtube.com/embed/uufCbCWfsgA" 
@@ -31,7 +31,17 @@ const Demo = () => {
           frameBorder={0}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
+        <div style={{position: "relative", paddingBottom: "48.4375%", height: 0,}}>
+          <iframe
+            src="https://www.loom.com/embed/2ad57c0942d24d1486beff1cb3e8632d"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
+          ></iframe>
+        </div>
       </ContainerWrapper>
       <LandingFooter notLandingPage={true} />
     </>
