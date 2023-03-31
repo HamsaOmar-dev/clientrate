@@ -32,12 +32,20 @@ const Demo = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowFullScreen
         ></iframe> */}
-        <div style={{position: "relative", paddingBottom: "48.4375%", height: 0,}}>
+        <div
+          style={{ position: "relative", paddingBottom: "48.4375%", height: 0 }}
+        >
           <iframe
-            src="https://www.loom.com/embed/2ad57c0942d24d1486beff1cb3e8632d"
+            src="https://www.loom.com/embed/ef86d6f658f84d4f88efc51de322ed0a"
             frameBorder="0"
             allowFullScreen
-            style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
           ></iframe>
         </div>
       </ContainerWrapper>
