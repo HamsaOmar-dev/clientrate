@@ -16,17 +16,19 @@ export default function App(props: AppProps) {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_SECRET}`}
+        async
         strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
+        src="https://www.googletagmanager.com/gtag/js?id=G-EL4KRXC0B1"
+      ></Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+      >
+        {`window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.GOOGLE_ANALYTICS_SECRET}');
-        `}
+          gtag('config', 'G-EL4KRXC0B1');`}
       </Script>
       <Head>
         <title>ClientRate</title>
@@ -49,16 +51,7 @@ export default function App(props: AppProps) {
           fontFamily: "Satoshi, sans-serif",
 
           colors: {
-            yellow: [
-              "#FCC419",
-              "#FCC419",
-              "#FCC419",
-              "#FCC419",
-              "#FCC419",
-              "#FCC419",
-              "#FCC419",
-              "#FAB005",
-            ],
+            yellow: ["#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FCC419", "#FAB005"],
           },
           primaryColor: "yellow",
         }}
