@@ -59,7 +59,7 @@ const NotesAndTotal = (props: Props) => {
           mt="xs"
           position="right"
         >
-          <Text weight="bold">Total: </Text>
+          <Text weight="bold">Rate: </Text>
           <TextInput
             readOnly
             styles={{
