@@ -72,20 +72,20 @@ export const totalHours = (form: any) => {
     totalOfAField(form, "individualstaffratio3") +
     totalOfAField(form, "individualstaffratio4") +
     totalOfAField(form, "individualstaffratio5") +
-    totalOfAField(form, "breakfast") +
-    totalOfAField(form, "lunch") +
-    totalOfAField(form, "supper") +
-    totalOfAField(form, "snack") +
-    totalOfAField(form, "nonmedicaltransportation1") +
-    totalOfAField(form, "nonmedicaltransportation2") +
-    totalOfAField(form, "nonmedicaltransportation3") +
-    totalOfAField(form, "nonmedicaltransportation4") +
-    totalOfAField(form, "nonmedicaltransportation5") +
-    totalOfAField(form, "nonmedicaltransportation6") +
-    totalOfAField(form, "nonmedicaltransportation7") +
-    totalOfAField(form, "nonmedicaltransportation8") +
-    totalOfAField(form, "nonmedicaltransportation9") +
-    totalOfAField(form, "nonmedicaltransportation10") +
+    // totalOfAField(form, "breakfast") +
+    // totalOfAField(form, "lunch") +
+    // totalOfAField(form, "supper") +
+    // totalOfAField(form, "snack") +
+    totalOfAField(form, "nonmedicaltransportation1") + //Driver 1:1
+    // totalOfAField(form, "nonmedicaltransportation2") + //Mileage 1:1
+    totalOfAField(form, "nonmedicaltransportation3") + //Driver Number of Riders 2
+    // totalOfAField(form, "nonmedicaltransportation4") + //Mileage Number of Riders 2
+    totalOfAField(form, "nonmedicaltransportation5") + //Driver Number of Riders 3-5
+    // totalOfAField(form, "nonmedicaltransportation6") + //Mileage Number of Riders 3-5
+    totalOfAField(form, "nonmedicaltransportation7") + //Driver Number of Riders 6-10
+    // totalOfAField(form, "nonmedicaltransportation8") + //Mileage Number of Riders 6-10
+    totalOfAField(form, "nonmedicaltransportation9") + //Driver Number of Riders More than 10
+    // totalOfAField(form, "nonmedicaltransportation10") + //Mileage Number of Riders More than 10
     totalOfAField(form, "assistancewithdressing") +
     totalOfAField(form, "assistancewithgrooming") +
     totalOfAField(form, "assistancewithbathing") +
