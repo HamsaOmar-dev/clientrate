@@ -48,7 +48,7 @@ const ViewClientRates = (props: ViewClientRatesProps) => {
                 size="xl"
                 color="dimmed"
               >
-                Total Units
+                Total Hours
               </Text>
             </Group>
             <Title
@@ -56,7 +56,7 @@ const ViewClientRates = (props: ViewClientRatesProps) => {
               order={1}
               weight="bold"
             >
-              {`${totalHours(form).toFixed(2)} Units`}
+              {`${totalHours(form).toFixed(2)} Hrs`}
             </Title>
           </Paper>
         </Grid.Col>
